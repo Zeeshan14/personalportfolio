@@ -109,7 +109,9 @@ export default function SkillsSection() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
-              <i className="fab fa-sap text-3xl text-blue-600 mb-2"></i>
+              <div className="w-12 h-12 flex items-center justify-center mb-2 bg-blue-600 rounded">
+                <span className="text-white font-bold text-lg">SAP</span>
+              </div>
               <span className="text-sm font-medium">SAP</span>
             </div>
             <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
@@ -131,6 +133,54 @@ export default function SkillsSection() {
             <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
               <i className="fab fa-python text-3xl text-yellow-500 mb-2"></i>
               <span className="text-sm font-medium">Python</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-aws text-3xl text-orange-500 mb-2"></i>
+              <span className="text-sm font-medium">AWS</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-microsoft text-3xl text-blue-600 mb-2"></i>
+              <span className="text-sm font-medium">Azure</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-google text-3xl text-red-500 mb-2"></i>
+              <span className="text-sm font-medium">GCP</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fas fa-chart-line text-3xl text-purple-600 mb-2"></i>
+              <span className="text-sm font-medium">Prometheus</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fas fa-chart-bar text-3xl text-orange-600 mb-2"></i>
+              <span className="text-sm font-medium">Grafana</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-jenkins text-3xl text-gray-700 mb-2"></i>
+              <span className="text-sm font-medium">Jenkins</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fas fa-database text-3xl text-blue-800 mb-2"></i>
+              <span className="text-sm font-medium">PostgreSQL</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-laravel text-3xl text-red-600 mb-2"></i>
+              <span className="text-sm font-medium">Laravel</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-react text-3xl text-blue-400 mb-2"></i>
+              <span className="text-sm font-medium">React</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fas fa-dharmachakra text-3xl text-blue-600 mb-2"></i>
+              <span className="text-sm font-medium">Kubernetes</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fab fa-git-alt text-3xl text-orange-600 mb-2"></i>
+              <span className="text-sm font-medium">Git</span>
+            </div>
+            <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
+              <i className="fas fa-robot text-3xl text-green-600 mb-2"></i>
+              <span className="text-sm font-medium">Power Automate</span>
             </div>
           </div>
         </div>

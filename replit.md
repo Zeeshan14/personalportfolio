@@ -104,7 +104,17 @@ This is a full-stack web application built with a React frontend and Express.js 
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes
+
+- June 14, 2025: Completed professional portfolio website for Zeeshan Mushtaq
+  - Implemented comprehensive single-page portfolio with hero, about, skills, experience, projects, education, and contact sections
+  - Added extensive technology stack display with 18+ technologies including SAP, AWS, Azure, GCP, Docker, Kubernetes, etc.
+  - Integrated professional photo from attached assets
+  - Added proper SAP and Coursera certification logos
+  - Replaced generic office image with relevant technology/data visualization image
+  - Optimized for responsive design and GitHub Pages hosting
+  - All content based on authentic resume data provided by user
+
 ## Changelog
 
-Changelog:
-- June 14, 2025. Initial setup
+- June 14, 2025: Initial setup and portfolio development
