@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import sapLogo from "@assets/image_1749922057198.png";
 
 export default function SkillsSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -123,7 +124,7 @@ export default function SkillsSection() {
             {/* SAP & Enterprise */}
             <div className="flex flex-col items-center p-4 hover:bg-gray-50 rounded-lg transition-colors">
               <div className="w-12 h-12 flex items-center justify-center mb-2">
-                <img src="@assets/image_1749922057198.png" alt="SAP Logo" className="w-10 h-6 object-contain" />
+                <img src={sapLogo} alt="SAP Logo" className="w-10 h-6 object-contain" />
               </div>
               <span className="text-sm font-medium">SAP</span>
             </div>

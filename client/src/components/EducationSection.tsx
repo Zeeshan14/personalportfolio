@@ -1,3 +1,6 @@
+import courseraLogo from "@assets/image_1749922108335.png";
+import sapLogo from "@assets/image_1749922057198.png";
+
 export default function EducationSection() {
   return (
     <section className="py-20 bg-white">
@@ -59,7 +62,7 @@ export default function EducationSection() {
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-600">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 flex items-center justify-center">
-                    <img src="@assets/image_1749922057198.png" alt="SAP Logo" className="w-8 h-5 object-contain" />
+                    <img src={sapLogo} alt="SAP Logo" className="w-8 h-5 object-contain" />
                   </div>
                   <h4 className="font-bold text-slate-800">SAP Certified Development Specialist</h4>
                 </div>
@@ -69,7 +72,7 @@ export default function EducationSection() {
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 flex items-center justify-center">
-                    <img src="@assets/image_1749922108335.png" alt="Coursera Logo" className="w-8 h-8 object-contain rounded" />
+                    <img src={courseraLogo} alt="Coursera Logo" className="w-8 h-8 object-contain rounded" />
                   </div>
                   <h4 className="font-bold text-slate-800">Development with OpenShift and K8s</h4>
                 </div>
@@ -79,7 +82,7 @@ export default function EducationSection() {
               <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 flex items-center justify-center">
-                    <img src="@assets/image_1749922108335.png" alt="Coursera Logo" className="w-8 h-8 object-contain rounded" />
+                    <img src={courseraLogo} alt="Coursera Logo" className="w-8 h-8 object-contain rounded" />
                   </div>
                   <h4 className="font-bold text-slate-800">Continuous Delivery and Managing Builds</h4>
                 </div>
