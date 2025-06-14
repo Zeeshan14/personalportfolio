@@ -1,18 +1,21 @@
 import courseraLogo from "@assets/image_1749922108335.png";
 import sapLogo from "@assets/image_1749922057198.png";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 export default function EducationSection() {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" ref={elementRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 scroll-animate ${isVisible ? 'animate' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Education & Certifications</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Education */}
-          <div className="bg-gradient-to-br from-blue-50 to-amber-50 p-8 rounded-xl">
+          <div className={`bg-gradient-to-br from-blue-50 to-amber-50 p-8 rounded-xl scroll-animate-left ${isVisible ? 'animate' : ''}`}>
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                 <i className="fas fa-graduation-cap text-blue-600 text-xl"></i>
@@ -50,7 +53,7 @@ export default function EducationSection() {
           </div>
 
           {/* Certifications */}
-          <div className="bg-gradient-to-br from-amber-50 to-blue-50 p-8 rounded-xl">
+          <div className={`bg-gradient-to-br from-amber-50 to-blue-50 p-8 rounded-xl scroll-animate-right ${isVisible ? 'animate' : ''}`}>
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
                 <i className="fas fa-certificate text-amber-600 text-xl"></i>

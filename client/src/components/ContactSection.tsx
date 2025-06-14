@@ -1,8 +1,12 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 export default function ContactSection() {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section id="contact" className="py-20 bg-slate-50">
+    <section id="contact" className="py-20 bg-slate-50" ref={elementRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 scroll-animate ${isVisible ? 'animate' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Let's Connect</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -11,7 +15,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className={`scroll-animate-left ${isVisible ? 'animate' : ''}`}>
             <img 
               src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Modern professional office space" 
@@ -19,7 +23,7 @@ export default function ContactSection() {
             />
           </div>
 
-          <div className="space-y-8">
+          <div className={`space-y-8 scroll-animate-right ${isVisible ? 'animate' : ''}`}>
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">

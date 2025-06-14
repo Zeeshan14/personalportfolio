@@ -21,7 +21,7 @@ export default function ExperienceSection() {
           {/* Experience Items */}
           <div className="space-y-12">
             {/* Current Role */}
-            <div className="relative md:pl-16">
+            <div className={`relative md:pl-16 scroll-animate-left ${isVisible ? 'animate' : ''}`}>
               <div className="timeline-item bg-white border border-gray-200 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>

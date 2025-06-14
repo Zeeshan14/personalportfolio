@@ -1,8 +1,12 @@
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+
 export default function ProjectsSection() {
+  const { elementRef, isVisible } = useScrollAnimation();
+
   return (
-    <section id="projects" className="py-20 bg-slate-50">
+    <section id="projects" className="py-20 bg-slate-50" ref={elementRef}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 scroll-animate ${isVisible ? 'animate' : ''}`}>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-amber-500 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
@@ -12,7 +16,7 @@ export default function ProjectsSection() {
 
         <div className="grid md:grid-cols-1 gap-8">
           {/* Project 1: Pharma Digitalization */}
-          <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden">
+          <div className={`bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden scroll-animate-left ${isVisible ? 'animate' : ''}`}>
             <div className="grid md:grid-cols-2">
               <div className="p-8">
                 <div className="flex items-center mb-4">
